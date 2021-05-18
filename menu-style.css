@@ -1,0 +1,211 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+    .top{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    img[alt="logo"]{
+        margin: 15px 0;
+
+    }
+    .navbar{
+        background: #111;
+        width: 100%;
+        height: 40px;
+    }
+
+
+    .bar{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+    
+    }
+
+    .bar li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 10px;
+        
+    }
+    a{
+    text-decoration: none;
+    color: white;  
+    font-size: 1.1rem;
+    }
+
+    .menu-img{
+        background-image: url(./images/menu-bg.jpg);
+        width: 100%;
+        height: 140px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    img[alt="menu-text"]{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    main{
+        margin: 0 auto;
+        padding: 0;
+        width: 1000px;
+        min-height: 100px;
+        display: flex;
+        flex-direction: row;
+    }
+    .menu{
+        background: white;
+        width: 70%;
+        height: 2000px;
+    }
+    .menu-sc{
+        background: #999;
+        width: 30%;
+        height: 600px;
+        color: black;
+        border-radius: 2%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 1.8rem;
+        
+    }
+    .main-scbox .sc-beverage a,.main-scbox .sc-foods a,.main-scbox .sc-setmenu a{
+        color: #333;
+    }
+
+    .cafe,.other,.dezato{
+        margin-bottom: 30px;
+        background: rgb(240, 240, 240);
+        border: none;
+        border-radius: 30px;
+        display: grid;
+        grid-template-columns: 271px 415px;
+        grid-template-rows: 50px 300px ;
+        grid-template-areas:
+        "box1 box1"
+        "box2 box3";
+    }
+    .cafe h3, .other h3, .dezato h3{
+        grid-area: box1;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    .coffee-img, .other-img,.dezato-img{
+        grid-area: box2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .caffee-list,.other-list,.dezato-list{
+        grid-area: box3;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    img[alt="coffe"],
+    img[alt="other"],
+    img[alt="foods"],
+    img[alt="dezato"],
+    img[alt="setmenu"]{
+        width: 200px;
+    }
+    .gift{
+        margin-top: 10px;
+        font-size: 0.9rem;
+        color: #999;
+    }
+    .other-list{
+        margin-left: 100px;
+        margin-right: 50px;
+    }
+
+    .caffee-list{
+        margin-left: 10px;
+        margin-right: 20px;
+    }
+
+
+    .tea,.fast-foods,.setmenu{
+        margin-bottom: 30px;
+        background: rgb(240, 240, 240);
+        border: none;
+        border-radius: 30px;
+        display: grid;
+        grid-template-columns: 415px 271px;
+        grid-template-rows: 50px 300px ;
+        grid-template-areas:
+        "box1 box1"
+        "box2 box3";
+    }
+    .tea h3,.fast-foods h3,.setmenu h3{
+        grid-area: box1;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    .tea-list,.fast-foods-list,.setmenu-list{
+        grid-area: box2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 50px;
+        margin-right: 50px;
+        
+    }
+    .tea-img,.fast-foods-img,.setmenu-img{
+        grid-area: box3;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    img[alt="tea"]{
+        width: 200px;
+    }
+
+    .fast-foods-list{
+        margin-left: 50px;
+        margin-right: 20px;
+
+    }
+
+
+    .al{
+        text-align: right;
+    }
+    .none-pic{
+        list-style: none;
+    }
+    li{
+        display: flex;
+        text-decoration: none;
+        justify-content: space-between;
+    }
+    /* Short cut css */
+    .menu-sc{
+        position:sticky;
+        margin: 200px auto;
+        top:30px;
+    
+
+    }
+    .all:hover{
+        cursor: pointer;
+    }
+
